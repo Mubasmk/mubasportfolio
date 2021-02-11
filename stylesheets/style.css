@@ -88,8 +88,8 @@
     top: 0;
     left: 48px;
     width: 75px;
-    height: calc(100vh - 96px);
-    margin-top: 48px;
+    height: calc(100vh - 180px);
+    margin-top: 90px;
     background: #121213;
     border: 3px solid #1c1c1d;
     box-shadow: 0 0 10px rgb(0, 0, 0/10%);
@@ -213,8 +213,9 @@
     position: relative;
     margin-left: 123px;
     margin-right: 48px;
-    margin-top: 24px;
-    height: calc(100vh - 60px);
+
+    /* margin-top: 48px; */
+    /* height: calc(100vh - 60px); */
   }
   
   /*==========main profile image=========*/
@@ -222,7 +223,8 @@
     background:url(/images/main.jpg) top center no-repeat;
     filter:contrast(1.5) brightness(1.2) blur(.3px);
     background-size: cover;
-    height: calc(100vh - 48px);
+    height: calc(100vh - 96px);
+    margin-top: 48px;
     opacity: .7;
     border: 3px solid #1c1c1d;
     box-shadow: 0 0 10px rgb(0, 0, 0/10%);
@@ -235,8 +237,8 @@
   -----------------------------------------------*/
   .content .area-bg{
     background: #121213;
-    height: calc(100vh - 96px);
-    margin-top: 24px;
+    height: calc(100vh - 180px);
+    margin-top: 90px;
     margin-bottom: 24px;
     border: 3px solid #1c1c1d;
     border-left: none;
@@ -244,7 +246,7 @@
   
   .home-info{
       padding-left: 50px;
-      padding-top: 0px;
+      padding-top: 100px;
       height: calc(100vh - 96px);
   }
   
@@ -815,6 +817,10 @@
   -webkit-transition-delay: .5s;
       transition-delay: .5s;
   }
+  .vertical-nav.menu-active .mini-menu > ul li:nth-of-type(7) {
+  -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+  }
   
   .vertical-nav.menu-active .mini-menu > ul li:last-of-type() {
   -webkit-transition-delay: .6s;
@@ -826,7 +832,7 @@
       width: auto;
       height: auto;
       line-height: 65px;
-      margin: 0 9px;
+      margin: -10px 3px;
       border: none;
   }
   
@@ -853,6 +859,9 @@
     margin-bottom: 0px;
     height: calc(100vh - 58px);
     border: none;
+  }
+  .home-info{
+      padding-top: 150px !important;
   }
   .skill-cont{
     left: 70%;
@@ -898,16 +907,21 @@
       top: 55px;
     }
   }
-  @media only screen and (min-width:575.99px) and (max-width:767.99px){
-    .home-info{
-      padding-top: 80px;
-    }
-    
+  @media only screen and (min-width:575.99px) and (max-width:768px){
+
     .content .area-bg{
-      margin-top: 0;
+      margin-top: 90px;
       margin-bottom: 0;
-      height: calc(100vh - 48px);
+      height: calc(100vh - 180px);
   
+    }
+    .home-info{
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+    .vertical-nav{
+        height: calc(100vh - 250px);
+        margin-top: 130px;
     }
   }
   @media only screen and (min-width:575.98px) and (max-width:1176px){
