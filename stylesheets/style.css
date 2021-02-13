@@ -88,8 +88,8 @@
     top: 0;
     left: 48px;
     width: 75px;
-    height: calc(100vh - 180px);
-    margin-top: 90px;
+    height: calc(100vh - 96px);
+    margin-top: 48px;
     background: #121213;
     border: 3px solid #1c1c1d;
     box-shadow: 0 0 10px rgb(0, 0, 0/10%);
@@ -214,8 +214,8 @@
     margin-left: 123px;
     margin-right: 48px;
 
-    /* margin-top: 48px; */
-    /* height: calc(100vh - 60px); */
+    margin-top: 24px;
+    height: calc(100vh - 48px);
   }
   
   /*==========main profile image=========*/
@@ -223,8 +223,8 @@
     background:url(/images/main.jpg) top center no-repeat;
     filter:contrast(1.5) brightness(1.2) blur(.3px);
     background-size: cover;
-    height: calc(100vh - 96px);
-    margin-top: 48px;
+    height: calc(100vh - 48px);
+    margin-top: 0px;
     opacity: .7;
     border: 3px solid #1c1c1d;
     box-shadow: 0 0 10px rgb(0, 0, 0/10%);
@@ -237,8 +237,8 @@
   -----------------------------------------------*/
   .content .area-bg{
     background: #121213;
-    height: calc(100vh - 180px);
-    margin-top: 90px;
+    height: calc(100vh - 96px);
+    margin-top: 24px;
     margin-bottom: 24px;
     border: 3px solid #1c1c1d;
     border-left: none;
@@ -246,19 +246,18 @@
   
   .home-info{
       padding-left: 50px;
-      padding-top: 100px;
-      height: calc(100vh - 96px);
+      padding-top: 10%;
   }
   
   .home-info h3{
-      font-size: 25px;
+      font-size: 2rem;
       font-weight: 800;
       color: #e6e5e5;
       line-height: 100px;
   }
   
   .home-info h1{
-      font-size: 75px;
+      font-size: 6rem;
       font-weight: 800;
       color: black;
       -webkit-text-stroke: 1px #fff;
@@ -266,10 +265,10 @@
   }
   
   .home-info p{
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: 800;
       color: #e6e5e5;
-      line-height: 70px;
+      line-height: 100px;
   }
   
   .main-btn{
@@ -727,16 +726,17 @@
     .page-content{
       margin-left: 0;
       margin-right: 0;
-      margin-top: 0;
+      /* margin-top: 56px; */
       top: 56px;
-      /* height: unset; */
+      overflow: hidden;
+      height: calc(100vh - 80px);
     }
     .vertical-nav {
       position: fixed;
       left: 0;
       width: 100%;
-      height: 65px;
-      margin-top: 0;
+      /* height: 65px; */
+      margin-top: 0px;
       border: none;
       border-bottom: 2px solid #1c1c1d;
   overflow: hidden;
@@ -749,7 +749,7 @@
       position: fixed;
       top: 0;
       left: 0;
-  margin-right: 43px;
+  margin-right: 15px;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
@@ -831,8 +831,8 @@
       display: inline-block;
       width: auto;
       height: auto;
-      line-height: 65px;
-      margin: -10px 3px;
+      /* line-height: 65px; */
+      margin: -10px -3px;
       border: none;
   }
   
@@ -857,11 +857,30 @@
   .content .area-bg{
     margin-top: 0px;
     margin-bottom: 0px;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 48px) !important;
     border: none;
   }
   .home-info{
-      padding-top: 150px !important;
+      padding-top: 100px !important;
+      padding-left: 0px;
+  }
+  .home-info h1{
+    font-size: 4rem !important;
+    line-height: 70px !important;
+  }
+  .home-info h3{
+    font-size: 1.5rem !important;
+    line-height: 70px !important;
+  }
+  .home-info p{
+    font-size: 1.5rem !important;
+    line-height: 70px !important;
+  }
+  .home-info a{
+    font-size: 15px !important;
+  }
+  .home-intro{
+    margin-left: 1vw;
   }
   .skill-cont{
     left: 70%;
@@ -873,24 +892,33 @@
     border-radius: 4px;
   }
   }
+  @media only screen and (max-width:410px){
+    .home-info{
+      padding-top: 0px !important;
+    }
+  }
   
   
   @media only screen and (max-width:992px){
+    .content .area-bg{
+      height: calc(100vh - 96px);
+      margin-top: 48px;
+    }
     .home-info{
-      padding-top: 50px;
+      padding-top: 30%;
       padding-left: 30px;
     }
     .home-info h3{
-      font-size: 20px;
-      line-height: 58px;
+      font-size: 30px;
+      line-height: 100px;
     }
     .home-info h1{
-      font-size: 55px;
-      line-height: 75px;
+      font-size: 80px;
+      line-height: 100px;
     }
     .home-info p{
-      font-size: 25px;
-      line-height: 66px;
+      font-size: 30px;
+      line-height: 100px;
     }
     .portfolio-info .item .overlay{
       top: 25%;
@@ -910,13 +938,20 @@
   @media only screen and (min-width:575.99px) and (max-width:768px){
 
     .content .area-bg{
-      margin-top: 90px;
+      margin-top: 24px !important;
       margin-bottom: 0;
-      height: calc(100vh - 180px);
+      height: calc(100vh - 96px);
   
     }
+    .home-info h1{
+      font-size: 80px;
+    }
+    .home-info h3,.home-info p{
+      font-size: 28px;
+      line-height: 100px;
+    }
     .home-info{
-        padding-top: 200px;
+        padding-top: 40%;
         padding-left: 50px;
     }
     .vertical-nav{
