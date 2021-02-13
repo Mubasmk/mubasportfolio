@@ -308,10 +308,10 @@
   
   .title h2{
       color: #dedddc;
-      font-size: 38px;
+      font-size: 45px;
       text-transform: uppercase;
       font-weight: 800;
-      margin-top: 20px;
+      margin-top: 60px;
       line-height: 1;
       letter-spacing: .7px;
   }
@@ -323,10 +323,12 @@
       margin: 15px auto;
       border-bottom: 3px solid #f9c828 !important;
   }
-  
+  .about-info{
+    /* padding-left: 20px; */
+  }
   .about-info h3{
       color: #fff;
-      font-size: 22px;
+      font-size: 30px;
       font-weight: 500;
       letter-spacing: .7px;
       margin-top: 70px;
@@ -342,7 +344,7 @@
   
   .about-info p{
       color: #dedddc;
-      font-size: 18px;
+      font-size: 22px;
       margin-top: 25px;
       font-weight: 400;
       line-height: 1.8;
@@ -364,7 +366,7 @@
       position: relative;
       display: inline-block;
       color: #fff;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 600;
       letter-spacing: 1px;
       text-transform: capitalize;
@@ -373,7 +375,7 @@
   .about-info .personal-info .personal-item h4::before{
       content: "";
       position: absolute;
-      top: 10px;
+      top: 12px;
       left: 115px;
       width: 25px;
       height: 2px;
@@ -394,14 +396,18 @@
       top: 1px;
       left: 180px;
       color: #dedddc;
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: 1px;
   }
   
-  .about .about-img img{
-      width: 336px;
-      height: 503px;
+  .about-img img{
+      width: 250px;
+      height: 350px;
       opacity: .6;
+  }
+  .about-intro .main-btn{
+    min-width: 200px !important;
+    margin-left: 20px;
   }
   
   /* ==========ABOUT========== */
@@ -855,7 +861,7 @@
     display: block;
   }
   .content .area-bg{
-    margin-top: 0px;
+    margin-top: 0px !important;
     margin-bottom: 0px;
     height: calc(100vh - 48px) !important;
     border: none;
@@ -882,6 +888,40 @@
   .home-intro{
     margin-left: 1vw;
   }
+  .title h2{
+    font-size: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 30px;
+  }
+  /* ---------------------------------- */
+  .about-info h3{
+   font-size: 22px;
+  }
+  .about-info p{
+    font-size: 16px;
+  }
+  .about-info .personal-info .personal-item h4{
+    font-size: 14px;
+  }
+  .about-info .personal-info .personal-item h4::before{
+    top: 8.5px;
+    left: 80px;
+    width: 20px;
+}
+.about-info .personal-info .personal-item h4::after{
+  left: 99px;
+}
+.about-info .personal-info .personal-item span{
+  font-size: 14px;
+  left: 125px;
+  letter-spacing: 0;
+}
+.about-intro .main-btn{
+  min-width: 130px !important;
+  margin-left: 0px;
+  font-size: 12px !important;
+}
+
   .skill-cont{
     left: 70%;
   }
@@ -934,6 +974,12 @@
       font-size: 14px;
       top: 55px;
     }
+    .about-intro .main-btn{
+      margin-left: 0;
+    }
+    .title h2{
+      margin-bottom: 40px;
+    }
   }
   @media only screen and (min-width:575.99px) and (max-width:768px){
 
@@ -969,6 +1015,9 @@
       position: absolute;
       animation: 1s mymove;
       animation-fill-mode: forwards;
+  }
+  .about-intro .main-btn{
+    margin-left: 0;
   }
   @keyframes mymove{
       from{
