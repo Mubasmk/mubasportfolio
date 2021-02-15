@@ -50,3 +50,16 @@ $(function(){
 		resetCallback: function() {}
 	});
 });
+
+//Custom PieChart 
+$(function () {
+	$('.chart').easyPieChart({
+        size: 180,
+        barColor: '#f9c828',
+        scaleColor: false,
+        lineWidth: 3,
+        trackColor: '#ecf0f1',
+        lineCap: 'circle',
+        animate: 1700
+    })
+});

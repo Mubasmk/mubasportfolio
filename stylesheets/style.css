@@ -422,6 +422,7 @@
     top: 0;
     left: 55%;
     transform: translate(-50%,-50%);
+    margin-top: 50px;
   
   }
   #skills .area-bg{
@@ -441,16 +442,15 @@
   .skill-cont .box{
     width: 30%;
     float: left;
-  
   }
   .skill-cont .box .chart{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: 20px auto;
     text-align: center;
     font-size: 25px;
-    line-height: 150px;
+    line-height: 180px;
     color: #f9c828;
   }
   
@@ -470,8 +470,8 @@
   .skill-cont .box h5{
     text-align: center;
     color: #d8d8d8;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
     margin-top: 15px;
   }
   /* ==========Skills========== */
@@ -922,19 +922,25 @@
   font-size: 12px !important;
 }
 
-  .skill-cont{
-    left: 70%;
-  }
-  .skill-cont .box{
-    width: 55%;
-  }
-  .portfolio-info .item .image{
-    border-radius: 4px;
-  }
+.skill-cont .box .chart{
+  margin: 20px auto;
+}
+.skill-cont{
+  left: 60%;
+}
+.skill-cont .box{
+  width: 80%;
+}
+.portfolio-info .item .image{
+  border-radius: 4px;
+}
   }
   @media only screen and (max-width:410px){
     .home-info{
       padding-top: 0px !important;
+    }
+    .portfolio-info .item .image{
+      border-radius: 4px;
     }
   }
   
@@ -980,6 +986,7 @@
     .title h2{
       margin-bottom: 40px;
     }
+    
   }
   @media only screen and (min-width:575.99px) and (max-width:768px){
 
@@ -1004,12 +1011,11 @@
         height: calc(100vh - 250px);
         margin-top: 130px;
     }
-  }
-  @media only screen and (min-width:575.98px) and (max-width:1176px){
     .skill-cont .box{
-      width: 46%;
+      width: 88%;
     }
   }
+
   @media only screen and (min-width:992px){
     .area-bg{
       position: absolute;
@@ -1027,6 +1033,11 @@
           right: 0px;
       }
   }
+  }
+  @media only screen and (max-width:1200px) and (min-width:768px){
+    .skill-cont .box{
+      width: 46%;
+    }
   }
   
   
