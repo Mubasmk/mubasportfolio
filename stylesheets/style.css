@@ -574,7 +574,7 @@
     top: 49px;
     left: -28px;
     bottom: -65px;
-    width: 2px;
+    width: 3px;
     background: #222223;
     box-shadow: 0 0 10px rgb(0, 0, 0/10%);
   }
@@ -934,6 +934,15 @@
 .portfolio-info .item .image{
   border-radius: 4px;
 }
+#resume .resume-info{
+  background-color: unset;
+  border: none;
+  padding: 0px 0px 0;
+}
+.resume-info .experience .resume-item:nth-child(2){
+  margin-bottom: 70px !important;
+}
+
   }
   @media only screen and (max-width:410px){
     .home-info{
@@ -949,6 +958,13 @@
   
   
   @media only screen and (max-width:992px){
+    .page-content{
+      margin-top: 0;
+    }
+    .vertical-nav{
+      margin-top: 90px;
+      height: calc(100vh - 180px);
+    }
     .content .area-bg{
       height: calc(100vh - 96px);
       margin-top: 48px;
@@ -992,7 +1008,10 @@
     
   }
   @media only screen and (min-width:575.99px) and (max-width:768px){
-
+    .page-content{
+      margin-left: 78px;
+      margin-right: 0;
+    }
     .content .area-bg{
       margin-top: 24px !important;
       margin-bottom: 0;
@@ -1013,9 +1032,13 @@
     .vertical-nav{
         height: calc(100vh - 250px);
         margin-top: 130px;
+        left: 0;
     }
     .skill-cont .box{
       width: 88%;
+    }
+    #resume .resume-info{
+      
     }
   }
 
