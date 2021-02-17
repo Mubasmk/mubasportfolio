@@ -111,28 +111,28 @@
                                                 
                                                 <form action="https://script.google.com/macros/s/AKfycbzLhqgDslnOt4a4HNOMwnuRtxrHC2rr5AwXkdcU/exec" method="POST" id="submit-form" class="contact-form">
                                                     <div class="form-group mb-4">
-                                                        <input type="text" class="form-control" value="" id="name" name="name" required >
+                                                        <input type="text" class="form-control" value="" id="name" name="name" onkeyup="this.setAttribute('value',this.value);" required >
                                                         <label for="name">Name</label>
                                                         <span class="input-border"></span>
                                                     </div>
                                                     <div class="form-group mb-4">
-                                                        <input type="email" name="email" class="form-control" value="" id="email" required>
+                                                        <input type="email" name="email" class="form-control" value="" id="email" onkeyup="this.setAttribute('value',this.value);" required>
                                                         <label for="email">Email</label>
                                                         <span class="input-border"></span>
                                                     </div>
                                                     <div class="form-group mb-4">
-                                                        <input type="text" name="subject" class="form-control" value="" id="subject" required>
+                                                        <input type="text" name="subject" class="form-control" value="" id="subject" onkeyup="this.setAttribute('value',this.value);" required>
                                                         <label for="subject">Subject</label>
                                                         <span class="input-border"></span>
                                                     </div>
                                                     <div class="form-group">
-                                                        <textarea id="message" class="form-control" data-value="" name="message" ></textarea>
+                                                        <textarea id="message" class="form-control" data-value="" name="message" onkeyup="this.setAttribute('data-value',this.value);" ></textarea>
                                                         <label for="message">Message</label>
                                                         <span class="input-border"></span>
                                                     </div>
                                                     <button type="submit" class="contact-btn main-btn btn btn-block" name="send">Send Message</button>
                                                     <div class="form-message text-center">
-
+                                                        <span></span>
                                                     </div>
                                                 </form>
                                             </div>

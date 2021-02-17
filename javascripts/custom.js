@@ -65,60 +65,29 @@ $(function () {
 });
 
 /*========== Ajax Contact Form  ==========*/
-$('.contact-form').on("submit", function () {
-		
-	var myForm = $(this),
-		data = {};
-	
-	myForm.find('[name]').each(function() {
-		
-		var that = $(this),
-			name = that.attr('name'),
-			value = that.val();
-		
-		data[name] = value; 
-		
-	});
-	$('.contact-form').on("submit", function () {
-		
-		var myForm = $(this),
-			data = {};
-		
-		myForm.find('[name]').each(function() {
-			
-			var that = $(this),
-				name = that.attr('name'),
-				value = that.val();
-			
-			data[name] = value; 
-			
-		});
-		
-		$.ajax({
-			
-			url: myForm.attr('action'),
-			type: myForm.attr('method'),
-			data: data,
-			success: function (response) {
-				
-				if (response == "success") {
-								
-					$(".contact-form").find(".form-message").addClass("success");
-					$(".form-message span").text("Message Sent!");
-					
-				} else {
-					
-					$(".contact-form").find(".form-message").addClass("error");
-					$(".form-message span").text("Error Sending!");
-					
-				}
-			}
-			
-		});
-		
-		return false;
-		
-	});	
 
-	
-});
+$("#submit-form").submit((e)=>{
+	e.preventDefault()
+	$.ajax({
+		url:"https://script.google.com/macros/s/AKfycbzLhqgDslnOt4a4HNOMwnuRtxrHC2rr5AwXkdcU/exec",
+		data:$("#submit-form").serialize(),
+		method:"post",
+		success:function (response){
+			if (response.result == "success") {
+								
+				$(".contact-form").find(".form-message").addClass("success");
+				$(".form-message span").text("Message Sent !");
+				
+			} else {
+				
+				$(".contact-form").find(".form-message").addClass("error");
+				$(".form-message span").text("Sending Failed !");
+				
+			}
+		},
+		error:function (err){
+			alert("Something Error")
+
+		}
+	})
+})
