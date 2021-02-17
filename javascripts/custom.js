@@ -1,3 +1,5 @@
+
+//---------active toggle menu on small tier devices
 $(function () {
     var nav = $(".vertical-nav");
     $(".vertical-nav .toggle-menu").on("click", function () {
@@ -65,7 +67,6 @@ $(function () {
 });
 
 /*========== Ajax Contact Form  ==========*/
-
 $("#submit-form").submit((e)=>{
 	e.preventDefault()
 	$.ajax({
