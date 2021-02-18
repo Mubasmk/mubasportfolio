@@ -327,7 +327,7 @@ h6 {
 
 .about-info h3{
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: .7px;
     margin-top: 70px;
@@ -343,7 +343,7 @@ h6 {
   
 .about-info p{
     color: #dedddc;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 25px;
     font-weight: 400;
     line-height: 1.8;
@@ -365,7 +365,7 @@ h6 {
     position: relative;
     display: inline-block;
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -374,7 +374,7 @@ h6 {
 .about-info .personal-info .personal-item h4::before{
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: 115px;
     width: 25px;
     height: 2px;
@@ -385,7 +385,7 @@ h6 {
     content: '\f105';
     font-family: "FontAwesome";
     position: absolute;
-    top: 1px;
+    top: 2px;
     left: 139px;
     color: #f9c828;
 }
@@ -395,7 +395,7 @@ h6 {
     top: 1px;
     left: 180px;
     color: #dedddc;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
   
