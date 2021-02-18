@@ -56,7 +56,7 @@ $(function(){
 //Custom PieChart 
 $(function () {
 	$('.chart').easyPieChart({
-        size: 180,
+        size: 160,
         barColor: '#f9c828',
         scaleColor: false,
         lineWidth: 3,
