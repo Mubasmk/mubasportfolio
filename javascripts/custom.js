@@ -50,13 +50,14 @@ $(function(){
 		onStringTyped: function() {},
 		// callback for reset
 		resetCallback: function() {}
+		
 	});
 });
 
 //Custom PieChart 
 $(function () {
 	$('.chart').easyPieChart({
-        size: 160,
+        size: 150,
         barColor: '#f9c828',
         scaleColor: false,
         lineWidth: 3,
@@ -80,7 +81,7 @@ $("#submit-form").submit((e)=>{
 				$(".form-message span").text("Message Sent !");
 				
 			} else {
-				
+			
 				$(".contact-form").find(".form-message").addClass("error");
 				$(".form-message span").text("Sending Failed !");
 				

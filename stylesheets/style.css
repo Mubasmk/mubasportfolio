@@ -446,12 +446,12 @@ h6 {
 
 .skill-cont .box .chart{
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     margin: 20px auto;
     text-align: center;
-    font-size: 25px;
-    line-height: 160px;
+    font-size: 22px;
+    line-height: 150px;
     color: #f9c828;
 }
   
