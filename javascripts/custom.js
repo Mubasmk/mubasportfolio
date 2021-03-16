@@ -19,7 +19,7 @@ $(document).ready(function () {
 //Typed function
 $(function(){
 	$(".home-info .typed").typed({
-		strings: ["Developer", "Developer", "Developer"],
+		strings: ["{ Developer }", "{ Developer }", "{ Developer }"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
